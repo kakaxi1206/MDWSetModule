@@ -1,10 +1,10 @@
 //
 //
 
-#import "Target_MDSet.h"
+#import "Target_MDWSet.h"
 #import "MDCSettingVc.h"
 
-@implementation Target_MDSet
+@implementation Target_MDWSet
 
 /// 设置视图
 /// - Parameter params: 登录VC需要的参数

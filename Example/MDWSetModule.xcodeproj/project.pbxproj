@@ -30,7 +30,7 @@
 		843912962E0A523E0083A207 /* MDCProposalVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 843912892E0A523E0083A207 /* MDCProposalVc.m */; };
 		843912992E0A53410083A207 /* MDCSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843912982E0A53410083A207 /* MDCSettingCell.m */; };
 		8439129C2E0A59900083A207 /* MDWSetModule.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8439129B2E0A59900083A207 /* MDWSetModule.bundle */; };
-		8439129F2E0A8B650083A207 /* Target_MDSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8439129E2E0A8B650083A207 /* Target_MDSet.m */; };
+		8439129F2E0A8B650083A207 /* Target_MDWSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8439129E2E0A8B650083A207 /* Target_MDWSet.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		C7814194AA9051CDC14A317E /* Pods_MDWSetModule_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17224EC76FA00DD6B098A5B9 /* Pods_MDWSetModule_Example.framework */; };
 /* End PBXBuildFile section */
@@ -87,8 +87,8 @@
 		843912972E0A53410083A207 /* MDCSettingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCSettingCell.h; sourceTree = "<group>"; };
 		843912982E0A53410083A207 /* MDCSettingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCSettingCell.m; sourceTree = "<group>"; };
 		8439129B2E0A59900083A207 /* MDWSetModule.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MDWSetModule.bundle; sourceTree = "<group>"; };
-		8439129D2E0A8B650083A207 /* Target_MDSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_MDSet.h; sourceTree = "<group>"; };
-		8439129E2E0A8B650083A207 /* Target_MDSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_MDSet.m; sourceTree = "<group>"; };
+		8439129D2E0A8B650083A207 /* Target_MDWSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_MDWSet.h; sourceTree = "<group>"; };
+		8439129E2E0A8B650083A207 /* Target_MDWSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_MDWSet.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E6105F4DFF04872523BB426A /* Pods-MDWSetModule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDWSetModule_Example.debug.xcconfig"; path = "Target Support Files/Pods-MDWSetModule_Example/Pods-MDWSetModule_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F850DCB5E4B4512366427EBD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -244,8 +244,8 @@
 			children = (
 				843912812E0A523E0083A207 /* Model */,
 				8439128E2E0A523E0083A207 /* Setting */,
-				8439129D2E0A8B650083A207 /* Target_MDSet.h */,
-				8439129E2E0A8B650083A207 /* Target_MDSet.m */,
+				8439129D2E0A8B650083A207 /* Target_MDWSet.h */,
+				8439129E2E0A8B650083A207 /* Target_MDWSet.m */,
 			);
 			name = Classes;
 			path = ../MDWSetModule/Classes;
@@ -457,7 +457,7 @@
 				6003F5A7195388D20070C39A /* MDViewController.m in Sources */,
 				843912902E0A523E0083A207 /* MDCAccountSecurityVc.m in Sources */,
 				843912912E0A523E0083A207 /* MDCAboutVc.m in Sources */,
-				8439129F2E0A8B650083A207 /* Target_MDSet.m in Sources */,
+				8439129F2E0A8B650083A207 /* Target_MDWSet.m in Sources */,
 				843912922E0A523E0083A207 /* MDCSettingVc.m in Sources */,
 				843912932E0A523E0083A207 /* MDCVersionInfoVc.m in Sources */,
 				843912992E0A53410083A207 /* MDCSettingCell.m in Sources */,
