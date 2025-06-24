@@ -6,9 +6,9 @@
 
 @implementation Target_MDSet
 
-/// 返回登录VC
+/// 设置视图
 /// - Parameter params: 登录VC需要的参数
--(UIViewController *)Action_loginViewController:(NSDictionary *)params{
+-(UIViewController *)Action_settingViewController:(NSDictionary *)params{
     
     MDCSettingVc *setVc = [[MDCSettingVc alloc] init];
     setVc.itemArray = params[@"itemArray"];
