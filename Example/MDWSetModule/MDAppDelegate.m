@@ -8,11 +8,50 @@
 
 #import "MDAppDelegate.h"
 
+#import "MDCSettingVc.h"
+
+#import <MDBMarcoModule/MDPublicEnum.h>
+
+
 @implementation MDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    NSMutableArray *dataArray = [NSMutableArray array];
+        
+    NSArray *dataArr1 = @[@{@"title":@"账号与安全",@"type":@(MDSetItemTypeSecurity)},
+                          @{@"title":@"帮助与建议",@"type":@(MDSetItemTypeProposal)}];
+    
+    NSArray *dataArr2 = @[@{@"title":@"注销账号",@"type":@(MDSetItemTypeClose)},
+                          @{@"title":@"版本信息",@"type":@(MDSetItemTypeVersion)},
+                          @{@"title":@"关于猫嘀嘀",@"type":@(MDSetItemTypeAbout)}];
+    
+    
+    [dataArray addObject:dataArr1];
+    [dataArray addObject:dataArr2];
+    
+    NSDictionary *aboutDic = @{@"about_logo":[UIImage new],@"content":@"猫嘀嘀app是专为贷款经纪人开发的一款展业获客工具，汇聚海量的客户资源，丰富的业内人脉资源，帮助广大经纪人解决资源匮乏的问题。精准、高效、便捷的帮助经纪人发布业务、获取业务信息，让获客更简单！猫嘀嘀app隶属于上海鑫猫科技旗下，上海鑫猫科技作为新型综合信息金融科技服务平台，将持续创新升级、源源不断地为用户输送巨量资源，提供精细化的平台服务，更好的服务每一位经纪人。"};
+    
+//    UIImage *logoImg = self.aboutInfo[@"about_logo"];
+//    
+//    //    NSString *content = @"猫嘀嘀app是专为贷款经纪人开发的一款展业获客工具，汇聚海量的客户资源，丰富的业内人脉资源，帮助广大经纪人解决资源匮乏的问题。精准、高效、便捷的帮助经纪人发布业务、获取业务信息，让获客更简单！猫嘀嘀app隶属于上海鑫猫科技旗下，上海鑫猫科技作为新型综合信息金融科技服务平台，将持续创新升级、源源不断地为用户输送巨量资源，提供精细化的平台服务，更好的服务每一位经纪人。";
+//        
+//    NSString *content = self.aboutInfo[@"content"];
+    
+    
+    MDCSettingVc *loginVC = [[MDCSettingVc alloc] init];
+    loginVC.itemArray = dataArray;
+    loginVC.aboutInfo = aboutDic;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+    self.window.rootViewController = nav;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

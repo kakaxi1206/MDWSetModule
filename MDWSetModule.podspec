@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MDWSetModule'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'A short description of MDWSetModule.'
 
 # This description is used to generate tags and improve search results.
@@ -25,13 +25,25 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Feex@2023eit' => '7096397474@qq.com' }
-  s.source           = { :git => 'https://github.com/Feex@2023eit/MDWSetModule.git', :tag => s.version.to_s }
+  s.source           = { :git => 'git@github.com:kakaxi1206/MDWSetModule.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+
+  s.resources = 'MDWSetModule/Assets/*.{png,jpeg,jpg,gif,bundle}'
 
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'MDWSetModule/Classes/**/*'
   
+  s.dependency 'MJExtension'
+  s.dependency 'MDBUIModule'
+  s.dependency 'MDBMethodExtendModule'
+  s.dependency 'MDBMarcoModule'
+  s.dependency 'MDProgressHUD'
+  s.dependency 'MDBNetWorkModule'
+  s.dependency 'MDLoginCategory'
+  s.dependency 'MDWLoginModule'
+
+
   # s.resource_bundles = {
   #   'MDWSetModule' => ['MDWSetModule/Assets/*.png']
   # }

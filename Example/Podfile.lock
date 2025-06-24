@@ -1,0 +1,195 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - AliyunOSSiOS (2.11.1)
+  - CTMediator (48)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MDBDataModule (0.0.5):
+    - MDBDataModule/Model (= 0.0.5)
+    - MDBDataModule/YYCache (= 0.0.5)
+    - MJExtension
+  - MDBDataModule/Model (0.0.5):
+    - MJExtension
+  - MDBDataModule/YYCache (0.0.5):
+    - MJExtension
+  - MDBMarcoModule (0.0.4)
+  - MDBMethodExtendModule (0.0.2):
+    - Masonry
+    - MDBMethodExtendModule/UIButton (= 0.0.2)
+    - MDBMethodExtendModule/UIColor (= 0.0.2)
+    - MDBMethodExtendModule/UIImage (= 0.0.2)
+    - MDBMethodExtendModule/UIView (= 0.0.2)
+  - MDBMethodExtendModule/UIButton (0.0.2):
+    - Masonry
+  - MDBMethodExtendModule/UIColor (0.0.2):
+    - Masonry
+  - MDBMethodExtendModule/UIImage (0.0.2):
+    - Masonry
+  - MDBMethodExtendModule/UIView (0.0.2):
+    - Masonry
+    - MDBMethodExtendModule/UIColor
+  - MDBNetFileModule (0.0.2):
+    - AliyunOSSiOS
+    - MDBDataModule
+    - MDBMethodExtendModule
+    - MDBNetWorkModule
+    - MJExtension
+  - MDBNetWorkModule (0.0.1):
+    - AFNetworking
+    - MBProgressHUD
+    - MDBDataModule
+    - MDBMethodExtendModule
+    - MDProgressHUD
+    - SDWebImage
+  - MDBUIModule (0.0.8):
+    - Masonry
+    - MDBDataModule
+    - MDBMarcoModule
+    - MDBMethodExtendModule
+    - MDBNetFileModule
+    - MDBNetWorkModule
+    - MDBUIModule/Nav (= 0.0.8)
+    - MDBUIModule/Pop (= 0.0.8)
+    - MDBUIModule/ProductBanner (= 0.0.8)
+    - MDBUIModule/UI (= 0.0.8)
+    - MDKeyboardManager
+    - MJExtension
+    - MJRefresh
+    - VHLNavigation
+  - MDBUIModule/Nav (0.0.8):
+    - Masonry
+    - MDBDataModule
+    - MDBMarcoModule
+    - MDBMethodExtendModule
+    - MDBNetFileModule
+    - MDBNetWorkModule
+    - MDKeyboardManager
+    - MJExtension
+    - MJRefresh
+    - VHLNavigation
+  - MDBUIModule/Pop (0.0.8):
+    - Masonry
+    - MDBDataModule
+    - MDBMarcoModule
+    - MDBMethodExtendModule
+    - MDBNetFileModule
+    - MDBNetWorkModule
+    - MDKeyboardManager
+    - MJExtension
+    - MJRefresh
+    - VHLNavigation
+  - MDBUIModule/ProductBanner (0.0.8):
+    - Masonry
+    - MDBDataModule
+    - MDBMarcoModule
+    - MDBMethodExtendModule
+    - MDBNetFileModule
+    - MDBNetWorkModule
+    - MDBUIModule/UI
+    - MDKeyboardManager
+    - MJExtension
+    - MJRefresh
+    - VHLNavigation
+  - MDBUIModule/UI (0.0.8):
+    - Masonry
+    - MDBDataModule
+    - MDBMarcoModule
+    - MDBMethodExtendModule
+    - MDBNetFileModule
+    - MDBNetWorkModule
+    - MDKeyboardManager
+    - MJExtension
+    - MJRefresh
+    - VHLNavigation
+  - MDKeyboardManager (0.0.3)
+  - MDLoginCategory (0.0.3):
+    - CTMediator
+  - MDProgressHUD (0.0.2):
+    - MBProgressHUD (= 1.1.0)
+    - SDWebImage
+  - MDWLoginModule (0.0.4):
+    - AFNetworking
+    - Masonry
+    - MDBDataModule
+    - MDBMarcoModule
+    - MDBNetWorkModule
+    - MDBUIModule
+    - MDKeyboardManager
+  - MJExtension (3.4.1)
+  - MJRefresh (3.7.6)
+  - SDWebImage (5.21.1):
+    - SDWebImage/Core (= 5.21.1)
+  - SDWebImage/Core (5.21.1)
+  - VHLNavigation (1.1.1)
+
+DEPENDENCIES:
+  - MDBMarcoModule
+  - MDBMethodExtendModule
+  - MDBNetWorkModule
+  - MDBUIModule
+  - MDLoginCategory
+  - MDProgressHUD
+  - MDWLoginModule
+  - MJExtension
+
+SPEC REPOS:
+  "git@github.com:kakaxi1206/ConfigPrivatePod.git":
+    - MDBDataModule
+    - MDBMarcoModule
+    - MDBMethodExtendModule
+    - MDBNetFileModule
+    - MDBNetWorkModule
+    - MDBUIModule
+    - MDKeyboardManager
+    - MDLoginCategory
+    - MDProgressHUD
+    - MDWLoginModule
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - AliyunOSSiOS
+    - CTMediator
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - SDWebImage
+    - VHLNavigation
+
+SPEC CHECKSUMS:
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  AliyunOSSiOS: 51e8aa24dda25918e3b5b80d72105a57485b6bf7
+  CTMediator: 3f3578b525b3a46a7a2f92a99922ec40363f4269
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MDBDataModule: 05bcd023a6b79fbb187071265629df1566995138
+  MDBMarcoModule: fce54ae44608a53634030200bd92cf048409fe44
+  MDBMethodExtendModule: e4336b6a89223fa7ae7bbe8c40c06b1b20320cd6
+  MDBNetFileModule: 9b4ee3862b1cb704c45ef8abdf546cbbb83565b2
+  MDBNetWorkModule: f3cbbd42ff37096428a33f854ef92a6e28fdcd28
+  MDBUIModule: 12320ccca93c266cd44e664460cd6220e7f1ad04
+  MDKeyboardManager: 0d1cdf9edabd50afed2200f083e73a0f4866faca
+  MDLoginCategory: 3672f0e990d25c0348c5db759def53e323661927
+  MDProgressHUD: 679b6eb86df53ed760c3cbb7da32155cd7d5361e
+  MDWLoginModule: 5ff50b2a92f96fa2125b87fc3c9096d841f52f74
+  MJExtension: 21c5f6f8c4d5d8844b7ae8fbae08fed0b501f961
+  MJRefresh: 2fe7fb43a5167ceda20bb7e63f130c04fd1814a5
+  SDWebImage: f29024626962457f3470184232766516dee8dfea
+  VHLNavigation: 793d91ffc2994a4322ae37d82b9ffe1744f4a744
+
+PODFILE CHECKSUM: 37fbe38f22d35b5039b22b8bacfbbf2b8b505e60
+
+COCOAPODS: 1.16.2

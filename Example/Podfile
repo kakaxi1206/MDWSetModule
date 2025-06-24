@@ -1,13 +1,18 @@
 use_frameworks!
 
+source 'https://github.com/CocoaPods/Specs.git'
+source 'git@github.com:kakaxi1206/ConfigPrivatePod.git'
+
 platform :ios, '10.0'
 
 target 'MDWSetModule_Example' do
-  pod 'MDWSetModule', :path => '../'
-
-  target 'MDWSetModule_Tests' do
-    inherit! :search_paths
-
-    
-  end
+#  pod 'MDWSetModule', :path => '../'
+  pod 'MJExtension'
+  pod 'MDBUIModule'
+  pod 'MDBMethodExtendModule'
+  pod 'MDBMarcoModule'
+  pod 'MDProgressHUD'
+  pod 'MDBNetWorkModule'
+  pod 'MDLoginCategory'
+  pod 'MDWLoginModule'
 end

@@ -20,8 +20,17 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		6BE874F4BC39B4FCB87C1E77 /* Pods_MDWSetModule_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2048E72BC921CC0A747E7EA /* Pods_MDWSetModule_Tests.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		843912902E0A523E0083A207 /* MDCAccountSecurityVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 843912852E0A523E0083A207 /* MDCAccountSecurityVc.m */; };
+		843912912E0A523E0083A207 /* MDCAboutVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 843912832E0A523E0083A207 /* MDCAboutVc.m */; };
+		843912922E0A523E0083A207 /* MDCSettingVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 8439128B2E0A523E0083A207 /* MDCSettingVc.m */; };
+		843912932E0A523E0083A207 /* MDCVersionInfoVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 8439128D2E0A523E0083A207 /* MDCVersionInfoVc.m */; };
+		843912942E0A523E0083A207 /* MDCAvatarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 843912802E0A523E0083A207 /* MDCAvatarModel.m */; };
+		843912952E0A523E0083A207 /* MDCCloseAccountVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 843912872E0A523E0083A207 /* MDCCloseAccountVc.m */; };
+		843912962E0A523E0083A207 /* MDCProposalVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 843912892E0A523E0083A207 /* MDCProposalVc.m */; };
+		843912992E0A53410083A207 /* MDCSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843912982E0A53410083A207 /* MDCSettingCell.m */; };
+		8439129C2E0A59900083A207 /* MDWSetModule.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8439129B2E0A59900083A207 /* MDWSetModule.bundle */; };
+		8439129F2E0A8B650083A207 /* Target_MDSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8439129E2E0A8B650083A207 /* Target_MDSet.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		C7814194AA9051CDC14A317E /* Pods_MDWSetModule_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17224EC76FA00DD6B098A5B9 /* Pods_MDWSetModule_Example.framework */; };
 /* End PBXBuildFile section */
@@ -39,7 +48,6 @@
 /* Begin PBXFileReference section */
 		0499D90972C2C83E5E3F8346 /* Pods-MDWSetModule_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDWSetModule_Example.release.xcconfig"; path = "Target Support Files/Pods-MDWSetModule_Example/Pods-MDWSetModule_Example.release.xcconfig"; sourceTree = "<group>"; };
 		17224EC76FA00DD6B098A5B9 /* Pods_MDWSetModule_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDWSetModule_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		45D8D97A24016604AF89093F /* Pods-MDWSetModule_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDWSetModule_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MDWSetModule_Tests/Pods-MDWSetModule_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MDWSetModule_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDWSetModule_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,14 +67,31 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		65D6C31C22515C0937F3B354 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		66F74FADC2DAA93872AB3CC6 /* MDWSetModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MDWSetModule.podspec; path = ../MDWSetModule.podspec; sourceTree = "<group>"; };
+		65D6C31C22515C0937F3B354 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		66F74FADC2DAA93872AB3CC6 /* MDWSetModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MDWSetModule.podspec; path = ../MDWSetModule.podspec; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8439127F2E0A523E0083A207 /* MDCAvatarModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCAvatarModel.h; sourceTree = "<group>"; };
+		843912802E0A523E0083A207 /* MDCAvatarModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCAvatarModel.m; sourceTree = "<group>"; };
+		843912822E0A523E0083A207 /* MDCAboutVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCAboutVc.h; sourceTree = "<group>"; };
+		843912832E0A523E0083A207 /* MDCAboutVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCAboutVc.m; sourceTree = "<group>"; };
+		843912842E0A523E0083A207 /* MDCAccountSecurityVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCAccountSecurityVc.h; sourceTree = "<group>"; };
+		843912852E0A523E0083A207 /* MDCAccountSecurityVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCAccountSecurityVc.m; sourceTree = "<group>"; };
+		843912862E0A523E0083A207 /* MDCCloseAccountVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCCloseAccountVc.h; sourceTree = "<group>"; };
+		843912872E0A523E0083A207 /* MDCCloseAccountVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCCloseAccountVc.m; sourceTree = "<group>"; };
+		843912882E0A523E0083A207 /* MDCProposalVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCProposalVc.h; sourceTree = "<group>"; };
+		843912892E0A523E0083A207 /* MDCProposalVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCProposalVc.m; sourceTree = "<group>"; };
+		8439128A2E0A523E0083A207 /* MDCSettingVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCSettingVc.h; sourceTree = "<group>"; };
+		8439128B2E0A523E0083A207 /* MDCSettingVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCSettingVc.m; sourceTree = "<group>"; };
+		8439128C2E0A523E0083A207 /* MDCVersionInfoVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCVersionInfoVc.h; sourceTree = "<group>"; };
+		8439128D2E0A523E0083A207 /* MDCVersionInfoVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCVersionInfoVc.m; sourceTree = "<group>"; };
+		843912972E0A53410083A207 /* MDCSettingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCSettingCell.h; sourceTree = "<group>"; };
+		843912982E0A53410083A207 /* MDCSettingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCSettingCell.m; sourceTree = "<group>"; };
+		8439129B2E0A59900083A207 /* MDWSetModule.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MDWSetModule.bundle; sourceTree = "<group>"; };
+		8439129D2E0A8B650083A207 /* Target_MDSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_MDSet.h; sourceTree = "<group>"; };
+		8439129E2E0A8B650083A207 /* Target_MDSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_MDSet.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BC50093C548992D17C85E6FD /* Pods-MDWSetModule_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDWSetModule_Tests.release.xcconfig"; path = "Target Support Files/Pods-MDWSetModule_Tests/Pods-MDWSetModule_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C2048E72BC921CC0A747E7EA /* Pods_MDWSetModule_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDWSetModule_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6105F4DFF04872523BB426A /* Pods-MDWSetModule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDWSetModule_Example.debug.xcconfig"; path = "Target Support Files/Pods-MDWSetModule_Example/Pods-MDWSetModule_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F850DCB5E4B4512366427EBD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F850DCB5E4B4512366427EBD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +113,6 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				6BE874F4BC39B4FCB87C1E77 /* Pods_MDWSetModule_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
-				6003F593195388D20070C39A /* Example for MDWSetModule */,
+				6003F593195388D20070C39A /* MDWSetModule */,
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
@@ -124,14 +148,15 @@
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				17224EC76FA00DD6B098A5B9 /* Pods_MDWSetModule_Example.framework */,
-				C2048E72BC921CC0A747E7EA /* Pods_MDWSetModule_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6003F593195388D20070C39A /* Example for MDWSetModule */ = {
+		6003F593195388D20070C39A /* MDWSetModule */ = {
 			isa = PBXGroup;
 			children = (
+				8439129A2E0A597D0083A207 /* Assets */,
+				8439128F2E0A523E0083A207 /* Classes */,
 				6003F59C195388D20070C39A /* MDAppDelegate.h */,
 				6003F59D195388D20070C39A /* MDAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -141,7 +166,6 @@
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
-			name = "Example for MDWSetModule";
 			path = MDWSetModule;
 			sourceTree = "<group>";
 		};
@@ -185,15 +209,63 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		843912812E0A523E0083A207 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				843912972E0A53410083A207 /* MDCSettingCell.h */,
+				843912982E0A53410083A207 /* MDCSettingCell.m */,
+				8439127F2E0A523E0083A207 /* MDCAvatarModel.h */,
+				843912802E0A523E0083A207 /* MDCAvatarModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8439128E2E0A523E0083A207 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				843912822E0A523E0083A207 /* MDCAboutVc.h */,
+				843912832E0A523E0083A207 /* MDCAboutVc.m */,
+				843912842E0A523E0083A207 /* MDCAccountSecurityVc.h */,
+				843912852E0A523E0083A207 /* MDCAccountSecurityVc.m */,
+				843912862E0A523E0083A207 /* MDCCloseAccountVc.h */,
+				843912872E0A523E0083A207 /* MDCCloseAccountVc.m */,
+				843912882E0A523E0083A207 /* MDCProposalVc.h */,
+				843912892E0A523E0083A207 /* MDCProposalVc.m */,
+				8439128A2E0A523E0083A207 /* MDCSettingVc.h */,
+				8439128B2E0A523E0083A207 /* MDCSettingVc.m */,
+				8439128C2E0A523E0083A207 /* MDCVersionInfoVc.h */,
+				8439128D2E0A523E0083A207 /* MDCVersionInfoVc.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		8439128F2E0A523E0083A207 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				843912812E0A523E0083A207 /* Model */,
+				8439128E2E0A523E0083A207 /* Setting */,
+				8439129D2E0A8B650083A207 /* Target_MDSet.h */,
+				8439129E2E0A8B650083A207 /* Target_MDSet.m */,
+			);
+			name = Classes;
+			path = ../MDWSetModule/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		8439129A2E0A597D0083A207 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8439129B2E0A59900083A207 /* MDWSetModule.bundle */,
+			);
+			name = Assets;
+			path = ../MDWSetModule/Assets;
+			sourceTree = SOURCE_ROOT;
+		};
 		AEB07D4692BE9708F1627AE5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				E6105F4DFF04872523BB426A /* Pods-MDWSetModule_Example.debug.xcconfig */,
 				0499D90972C2C83E5E3F8346 /* Pods-MDWSetModule_Example.release.xcconfig */,
-				45D8D97A24016604AF89093F /* Pods-MDWSetModule_Tests.debug.xcconfig */,
-				BC50093C548992D17C85E6FD /* Pods-MDWSetModule_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +280,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				497192A3FF686AF749E663BC /* [CP] Embed Pods Frameworks */,
+				47C0A6F91428D58E6A0D5B3D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,7 +295,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "MDWSetModule_Tests" */;
 			buildPhases = (
-				BC6AF7010EA477EBE31E69E3 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
@@ -248,6 +319,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Feex@2023eit";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 8WS3SK4795;
+						ProvisioningStyle = Manual;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +333,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -278,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				8439129C2E0A59900083A207 /* MDWSetModule.bundle in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -295,44 +372,56 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		497192A3FF686AF749E663BC /* [CP] Embed Pods Frameworks */ = {
+		47C0A6F91428D58E6A0D5B3D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MDWSetModule_Example/Pods-MDWSetModule_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MDWSetModule/MDWSetModule.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/AliyunOSSiOS/AliyunOSSiOS.framework",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MDBDataModule/MDBDataModule.framework",
+				"${BUILT_PRODUCTS_DIR}/MDBMethodExtendModule/MDBMethodExtendModule.framework",
+				"${BUILT_PRODUCTS_DIR}/MDBNetFileModule/MDBNetFileModule.framework",
+				"${BUILT_PRODUCTS_DIR}/MDBNetWorkModule/MDBNetWorkModule.framework",
+				"${BUILT_PRODUCTS_DIR}/MDBUIModule/MDBUIModule.framework",
+				"${BUILT_PRODUCTS_DIR}/MDKeyboardManager/MDKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MDLoginCategory/MDLoginCategory.framework",
+				"${BUILT_PRODUCTS_DIR}/MDProgressHUD/MDProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MDWLoginModule/MDWLoginModule.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/VHLNavigation/VHLNavigation.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDWSetModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AliyunOSSiOS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDBDataModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDBMethodExtendModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDBNetFileModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDBNetWorkModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDBUIModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDLoginCategory.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDWLoginModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VHLNavigation.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MDWSetModule_Example/Pods-MDWSetModule_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BC6AF7010EA477EBE31E69E3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MDWSetModule_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CD029AC2C85CD68A205EC599 /* [CP] Check Pods Manifest.lock */ = {
@@ -366,6 +455,15 @@
 			files = (
 				6003F59E195388D20070C39A /* MDAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* MDViewController.m in Sources */,
+				843912902E0A523E0083A207 /* MDCAccountSecurityVc.m in Sources */,
+				843912912E0A523E0083A207 /* MDCAboutVc.m in Sources */,
+				8439129F2E0A8B650083A207 /* Target_MDSet.m in Sources */,
+				843912922E0A523E0083A207 /* MDCSettingVc.m in Sources */,
+				843912932E0A523E0083A207 /* MDCVersionInfoVc.m in Sources */,
+				843912992E0A53410083A207 /* MDCSettingCell.m in Sources */,
+				843912942E0A523E0083A207 /* MDCAvatarModel.m in Sources */,
+				843912952E0A523E0083A207 /* MDCCloseAccountVc.m in Sources */,
+				843912962E0A523E0083A207 /* MDCProposalVc.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,12 +592,17 @@
 			baseConfigurationReference = E6105F4DFF04872523BB426A /* Pods-MDWSetModule_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8WS3SK4795;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MDWSetModule/MDWSetModule-Prefix.pch";
 				INFOPLIST_FILE = "MDWSetModule/MDWSetModule-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maodd.Consumer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = consumerDev;
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -510,12 +613,17 @@
 			baseConfigurationReference = 0499D90972C2C83E5E3F8346 /* Pods-MDWSetModule_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8WS3SK4795;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MDWSetModule/MDWSetModule-Prefix.pch";
 				INFOPLIST_FILE = "MDWSetModule/MDWSetModule-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maodd.Consumer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = consumerDev;
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -523,7 +631,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45D8D97A24016604AF89093F /* Pods-MDWSetModule_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -548,7 +655,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC50093C548992D17C85E6FD /* Pods-MDWSetModule_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
